@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.ws13Fresh.ws13.model.Person;
 import com.ws13Fresh.ws13.service.Contacts;
+import com.ws13Fresh.ws13.service.ContactsRedis;
 
 import jakarta.validation.Valid;
 
@@ -29,7 +30,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class PersonController {
 
     @Autowired
-    Contacts contacts;
+    ContactsRedis contacts; //cjanged to integrate redis
 
     //getMapping leads to a form
     @GetMapping("/")
