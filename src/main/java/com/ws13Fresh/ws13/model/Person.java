@@ -31,17 +31,17 @@ public class Person implements Serializable{
 
 
     
-    //TODO age validation, cannot be younger than 10 cannot be older than 100
+  /*   //TODO age validation, cannot be younger than 10 cannot be older than 100
     @NotNull(message = "This field must not be empty.")
     @DateTimeFormat(pattern = "dd-MM-yyyy")
     @Past( message = "Are you from the future?")
-    private LocalDate dob;
+    private LocalDate dob; */
 
-    public Person(String name, String email, String phoneNumber, LocalDate dob) {
+    public Person(String name, String email, String phoneNumber) {//add back dob
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        this.dob = dob;
+        //this.dob = dob;
     }
     public Person() {
 
@@ -71,18 +71,18 @@ public class Person implements Serializable{
         this.phoneNumber = phoneNumber;
     }
 
-
+/* 
     public LocalDate getDob() {
         return dob;
     }
 
     public void setDob(LocalDate dob) {
         this.dob = dob;
-    }
+    } */
 
     @Override
     public String toString() {
-        return name + "," + email + "," + phoneNumber + "," + dob;
+        return name + "," + email + "," + phoneNumber + ",";//add back dob
     }
     
     

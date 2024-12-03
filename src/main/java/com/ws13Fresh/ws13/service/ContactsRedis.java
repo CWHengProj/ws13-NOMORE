@@ -62,8 +62,8 @@ public class ContactsRedis {
         bw.newLine();   
         bw.write(person.getPhoneNumber());        
         bw.newLine();   
-        bw.write(person.getDob().toString());     
-        bw.newLine();
+        /* bw.write(person.getDob().toString());     
+        bw.newLine(); */
         bw.flush();
         bw.close();   
     }

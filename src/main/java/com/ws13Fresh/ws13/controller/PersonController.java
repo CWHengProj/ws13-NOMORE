@@ -12,7 +12,6 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.ws13Fresh.ws13.model.Person;
-import com.ws13Fresh.ws13.service.Contacts;
 import com.ws13Fresh.ws13.service.ContactsRedis;
 
 import jakarta.validation.Valid;

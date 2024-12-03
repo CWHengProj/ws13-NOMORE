@@ -28,11 +28,11 @@
             <div th:if="${#fields.hasErrors('phoneNumber')}" th:errors = "*{phoneNumber}" class="text-danger" ></div>
             <input type="number" class="form-control" name="phoneNumber"  th:field="*{phoneNumber}" placeholder="Enter phone number">
         </div>
-        <div class="form-group">
+        <!--<div class="form-group">
             <label for="exampleInputEmail1">Date of Birth</label>
             <div th:if="${#fields.hasErrors('dob')}" th:errors = "*{dob}" class="text-danger" ></div>
             <input type="date" class="form-control" name="dob"  th:field="*{dob}" placeholder="Enter date of birth">
-        </div>
+        </div>-->
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
       <a href="/contact/allContacts"><button class="btn btn-primary">See all users</button></a>
